@@ -25,6 +25,11 @@ class Elf(Character):
         self.name = "Elf"
 
 
+orc = Orc("Orc", 200)
+elf = Elf("Elf", 100)
+human = Human("Human", 150)
+
+
 class Enemy:
     def __init__(self, name, hp, dmg, height):
         self.hp = hp
@@ -67,4 +72,16 @@ class Golem(Enemy):
         self.dmg = dmg
         self.name = name
         self.height = height
-        
+
+
+golem = Golem("Golem", 300, 100, "at least four horses tall")
+basilisk = Wyvern("Basilisk", 250, 150, "at least three horses tall")
+gryphon = Gryphon("Gryphon", 200, 200, "at least two of those caravans tall")
+wolfman = Werewolf("Wolfman", 150, 250, "at least two horses tall")
+
+monsterNames = [wolfman.name, basilisk.name, gryphon.name, golem.name]
+
+fighter = "drunken fighter"
+fighterHp = 100
+
+fightRounds = [123]
