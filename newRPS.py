@@ -1,5 +1,6 @@
 import random
 
+
 def RPS():
 
     options = ['swing', 'bash', 'stab']
@@ -21,7 +22,6 @@ def RPS():
             else:
                 print("Come on, fight!")
                 continue
-
 
         computerChoice = random.choice(options)
 
@@ -56,6 +56,7 @@ def RPS():
 
     print(f'>>> You scored: {player_wins} win(s) out of three!! <<<')
 
+
 def bareHandRPS():
 
     options = ['uppercut', 'jab', 'block']
@@ -77,7 +78,6 @@ def bareHandRPS():
             else:
                 print("Come on, fight!")
                 continue
-
 
         computerChoice = random.choice(options)
 
@@ -135,7 +135,6 @@ def MonsterRPS():
                 print("Come on, fight!")
                 continue
 
-
         computerChoice = random.choice(options)
 
         if playerChoice == computerChoice:
@@ -161,7 +160,7 @@ def MonsterRPS():
 
         if player_wins == necessary_wins or computer_wins == necessary_wins:
             break
-    
+
     if player_wins > computer_wins:
         print(f'>>> You scored: {player_wins} win(s) out of three!! ')
         print(f'>>> You win the fight and defeated the monster!  ')
