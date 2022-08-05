@@ -31,3 +31,4 @@ class axe(weapon):
     def __init__(self, dmg):
         super().__init__(dmg)
         self.dmg = 110
+
